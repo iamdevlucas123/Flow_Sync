@@ -2,6 +2,8 @@
 
 > Modern workflow automation platform inspired by enterprise integration systems.
 
+![Dashboard Preview](./assets/dashboard.png)
+![Integration Preview](./assets/integration.png)
 ---
 
 ## Overview
