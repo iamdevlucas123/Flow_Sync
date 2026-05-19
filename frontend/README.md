@@ -1,73 +1,227 @@
-# React + TypeScript + Vite
+# FlowSync
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Modern workflow automation platform inspired by enterprise integration systems.
 
-Currently, two official plugins are available:
+![Dashboard Preview](https://via.placeholder.com/1200x600?text=FlowSync+Dashboard)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+FlowSync is a SaaS-inspired platform designed to simulate how modern integration and automation systems work in real-world enterprise environments.
 
-## Expanding the ESLint configuration
+The project focuses on:
+- API integrations
+- workflow automation
+- real-time monitoring
+- scalable frontend architecture
+- modern product-oriented UI/UX
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Built to demonstrate full-stack engineering skills using modern technologies and clean software architecture patterns.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Dashboard Analytics
+- Active integrations overview
+- Requests monitoring
+- Success rate tracking
+- Workflow metrics
+- Interactive charts using Recharts
+
+---
+
+## Integrations Management
+
+Monitor integrations such as:
+- GitHub API
+- OpenAI API
+- Stripe
+- Slack
+
+Features:
+- Connection status
+- Sync state
+- Last activity tracking
+
+---
+
+## Workflow Builder
+
+Simple automation workflow system with:
+- Triggers
+- Actions
+- Workflow visualization
+
+Example:
+
+```txt
+Trigger:
+New User Registered
+
+Actions:
+→ Send Webhook
+→ Notify Slack
+→ Generate AI Summary
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Live Logs
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Simulated real-time activity feed:
+
+```txt
+[12:01] Webhook received
+[12:02] AI processed request
+[12:02] CRM synchronized
 ```
+
+---
+
+# Tech Stack
+
+## Frontend
+- React
+- TypeScript
+- Tailwind CSS
+- TanStack Query
+- Zustand
+- Framer Motion
+- Recharts
+
+---
+
+## Backend
+- Node.js
+- Express
+- Prisma ORM
+- SQLite
+
+---
+
+# Architecture
+
+```txt
+frontend/
+├── components/
+├── pages/
+├── hooks/
+├── services/
+├── store/
+└── types/
+
+backend/
+├── controllers/
+├── services/
+├── routes/
+├── prisma/
+└── lib/
+```
+
+---
+
+# UI/UX Focus
+
+FlowSync was designed with strong emphasis on:
+- modern SaaS aesthetics
+- responsive layouts
+- smooth animations
+- scalable component architecture
+- polished user experience
+- enterprise dashboard design patterns
+
+---
+
+# Installation
+
+## Clone repository
+
+```bash
+git clone https://github.com/your-username/flowsync.git
+```
+
+---
+
+## Frontend setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+## Backend setup
+
+```bash
+cd backend
+npm install
+npx prisma migrate dev
+npm run dev
+```
+
+---
+
+# Environment Variables
+
+## Backend `.env`
+
+```env
+DATABASE_URL="file:./dev.db"
+PORT=3000
+```
+
+---
+
+# Future Improvements
+
+- Real WebSocket communication
+- Authentication system
+- Multi-tenant architecture
+- GraphQL support
+- AI Agents integration
+- Drag-and-drop workflow builder
+- Advanced monitoring system
+
+---
+
+# Inspiration
+
+Inspired by modern workflow automation and integration platforms such as:
+- Zapier
+- n8n
+- Make
+- Enterprise API orchestration systems
+
+---
+
+# Deployment
+
+## Frontend
+- Vercel
+
+## Backend
+- Railway
+
+---
+
+# Goals
+
+This project was created to demonstrate:
+- modern frontend engineering
+- API integration patterns
+- scalable architecture
+- clean UI/UX implementation
+- product-oriented development mindset
+
+---
+
+# Author
+
+Lucas Flach Borges
+
+- GitHub: https://github.com/iamdevlucas123
+- LinkedIn: https://www.linkedin.com/in/lucas-borges-1a723b180/
