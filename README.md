@@ -2,8 +2,6 @@
 
 > Modern workflow automation platform inspired by enterprise integration systems.
 
-![Dashboard Preview](https://via.placeholder.com/1200x600?text=FlowSync+Dashboard)
-
 ---
 
 ## Overview
